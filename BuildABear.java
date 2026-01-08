@@ -31,7 +31,7 @@ public class BuildABear {
         this.name = n; 
         this.fillLevel = fl; 
         this.price = 150.00; 
-        this.HasSpeaker = false; 
+        this.hasSpeaker = false; 
         this.recording = ""; 
     }
 
@@ -51,4 +51,11 @@ public class BuildABear {
         return price; 
     }
 
-}
+    // Write a toString() method so that we can print an object's STATE 
+    // including this method changes what happens when you print an object. otherwise doing system.out.println(object); just shows a memory location 
+    public String toString() {
+        String state = "BuildABear[" + type + ", " + name + ", " + fillLevel + ", " + price + "]"; 
+        return state;
+    }
+
+}// end class
