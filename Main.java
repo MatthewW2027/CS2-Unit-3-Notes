@@ -37,5 +37,13 @@ public class Main {
       // setters (mutators) changed values. Let's see the effects: 
       System.out.println(teddyBear); 
 
+      // STATIC variables & methods belong to a CLASS 
+      // get CALLED using the class name, NOT an object 
+      BuildABear.showStore();
+      // we've used static methods from the Math class!!!
+      double randNum = Math.random();  
+      // NOTE: the main method is STATIC becuase there is ONLY ONE COPY of it per program! 
+      
+
    } // end MAIN METHOD 
 } // and MAIN CLASS 

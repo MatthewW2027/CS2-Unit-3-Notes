@@ -13,6 +13,10 @@ public class BuildABear {
     private String recording; 
     // ENCAPSULATION: keep variables PRIVATE they can't be directly acessed outside of this CLASS 
 
+    // STATIC VARIABLES belong to the genera class 
+    private static String storeLocation = "Upper East Side";
+    private static int ineventoryCount = 50;
+
     // 2. CONSTRUCTORS (initialize values) 
     // DEFAULT CONSTRUCTOR does not take any arguments (no-arg) 
     // what gets called when user says "= new BuildABear()" 
@@ -68,6 +72,12 @@ public class BuildABear {
     }
     public void setFillLevel(int newFillLevel) {
         this.fillLevel = newFillLevel; 
+    }
+
+    // STATIC METHODS are behaviors that belong to the Class 
+    // (do not depend on specific object instances) 
+    public static void showStore() {
+        System.out.println("Welcome to "  + storeLocation + "Build A Bear Workshop!"); 
     }
 
 }// end class
